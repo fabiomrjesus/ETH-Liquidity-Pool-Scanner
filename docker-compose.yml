@@ -1,0 +1,30 @@
+version: "3.8"
+services: 
+  api: 
+    build:
+      context: ./Api/Api
+      dockerfile: Dockerfile
+    image: swap-pool-scanner:latest
+    restart: unless-stopped
+    container_name: swap-pool-scanner
+    depends_on:
+      - cache
+    expose:
+      - 80
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - DB_CONNECTION_STRING=Server=database;Database=SwapPoolScanner;User ID=sa;Password=Ua381*@pnG7%
+      - FACTORY_ADDRESS=0xca143ce32fe78f1f7019d7d551a6402fc5350c73 
+      - RPC_URL=https://bsc-dataseed.binance.org/
+      - WALLET_ADDRESS=0x0
+  cache:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - '6379:6379'
+    command: redis-server --save 20 1 --loglevel warning --requirepass eYVX7EwVmmxKPCDmwMtyKVge8oLd2t81
+    volumes: 
+      - cache:/data
+volumes:
+  cache:
+    driver: local

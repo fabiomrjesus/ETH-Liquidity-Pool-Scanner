@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api", "Api\Api.csproj", "{9B17D97D-9378-483C-9370-0FDA986347DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Crypto.Eth.Pool.SwapScanner", "Crypto.Eth.Pool.SwapScanner\Crypto.Eth.Pool.SwapScanner.csproj", "{C634296A-D6F7-4ADD-BBC6-8E01DF789111}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B17D97D-9378-483C-9370-0FDA986347DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B17D97D-9378-483C-9370-0FDA986347DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B17D97D-9378-483C-9370-0FDA986347DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B17D97D-9378-483C-9370-0FDA986347DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C634296A-D6F7-4ADD-BBC6-8E01DF789111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C634296A-D6F7-4ADD-BBC6-8E01DF789111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C634296A-D6F7-4ADD-BBC6-8E01DF789111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C634296A-D6F7-4ADD-BBC6-8E01DF789111}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {67FDD67D-7C93-4122-8101-FF88260C1AF7}
+	EndGlobalSection
+EndGlobal
